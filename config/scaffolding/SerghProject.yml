@@ -7,3 +7,19 @@ packages:
   gitUrl: https://github.com/ArtiKhareIBM
   gitUsername: ArtiKhareIBM
   gitBranch: main
+- name: substractpackage
+  gitServerName: srcCtrl_gitlab_Arti
+  gitUrl: https://gitlab.com/ArtiKhareGitlabnew
+  gitUsername: ArtiKhareGitlabnew
+  gitBranch: master
+services:
+- serviceName: project.sergh.integrations:currentdateflow
+  packages:
+  - name: SerghProject
+    version: "1.0"
+  - name: substractpackage
+    version: "2.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2100
